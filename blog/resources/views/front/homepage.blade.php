@@ -64,12 +64,7 @@
                 <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
             </div>
         </div>
-        <div class="col-md-3 mx-auto">
-            <ul class="list-group">
-                <a href="#" class="list-group-item">Günlük Hayat <span class="badge badge-success">12</span></a>
-                <a href="#" class="list-group-item">Eğitim <span class="badge badge-success">12</span></a>
-                <a href="#" class="list-group-item">Teknoloji <span class="badge badge-success">12</span></a>
-            </ul>
-        </div>
+@include("front.widgets.categoryWidget")
+
 @endsection
 
