@@ -16,6 +16,8 @@ use App\Http\Controllers\Front\Homepage;
 
 Route::get('/',[Homepage::class,"index"])->name("homepage");
 Route::get('sayfa',[Homepage::class,"index"]);
+Route::get('/iletisim',[Homepage::class,"contact"])->name("contact");
+Route::post('/iletisim',[Homepage::class,"contactPost"])->name("contact.post");
 Route::get('/kategori/{category}',[Homepage::class,"category"])->name("category");
 Route::get('/{category}/{slug}',[Homepage::class,"single"])->name("single");
 Route::get('/{page}',[Homepage::class,"page"])->name("page");
